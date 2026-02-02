@@ -1,1 +1,61 @@
+HTTP запрос:
+GET /api/v1/partners/stores
+Заголовки:
+Authorization: Bearer <token>
+Accept: application/json
 
+{
+  "stores": [
+    {
+      "id": "metro",
+      "name": "METRO",
+      "logoUrl": "https://cdn.example.com/logos/metro.png",
+      "delivery": {
+        "type": "slot",
+        "label": "Ближайшая доставка",
+        "date": "2026-02-02",
+        "timeFrom": "21:00",
+        "timeTo": "23:00"
+      },
+      "deeplinkUrl": "https://online.metro-cc.ru/"
+    },
+    {
+      "id": "auchan",
+      "name": "Ашан",
+      "logoUrl": "https://cdn.example.com/logos/auchan.png",
+      "delivery": {
+        "type": "slot",
+        "label": "Ближайшая доставка",
+        "date": "2026-02-02",
+        "timeFrom": "18:00",
+        "timeTo": "20:00"
+      },
+      "deeplinkUrl": "https://www.auchan.ru"
+    },
+    {
+      "id": "vkusvill",
+      "name": "ВкусВилл",
+      "logoUrl": "https://cdn.example.com/logos/vkusvill.png",
+      "delivery": {
+        "type": "fast",
+        "label": "Быстрая доставка",
+        "minMinutes": 20,
+        "maxMinutes": 60
+      },
+      "deeplinkUrl": "https://vkusvill.ru"
+    },
+    {
+      "id": "victoria",
+      "name": "Виктория",
+      "logoUrl": "https://cdn.example.com/logos/victoria.png",
+      "delivery": {
+        "type": "slot",
+        "label": "Ближайшая доставка",
+        "date": "2026-02-02",
+        "timeFrom": "17:00",
+        "timeTo": "19:00"
+      },
+      "deeplinkUrl": "https://victoria-group.ru/"
+    }
+  ]
+}
